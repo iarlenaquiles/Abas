@@ -25,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
         smartTabLayout = findViewById(R.id.viewPagerTab);
         viewPager = findViewById(R.id.viewPager);
 
+        // remover a sobra bottom da action bar
+        getSupportActionBar().setElevation(0);
+
         // configurar um adapter para as abas
         FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
                 getSupportFragmentManager(),
